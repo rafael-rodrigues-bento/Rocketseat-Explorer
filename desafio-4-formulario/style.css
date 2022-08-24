@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-header: #535971;
+  --bg-button: #ff5374;
+  --bg-form: #efefef;
+  --font-color-primary: #4e4958;
+  --font-color-secondary: #535971;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+  margin: auto;
+  max-width: 75rem;
+  background-color: #e5e5e5;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 436px;
+  background: var(--bg-header);
+}
+
+header {
+  padding-top: 14rem;
+  color: #ffffff;
+}
+
+header h1 {
+  font-family: 'Staatliches';
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: 1.8rem;
+}
+
+header p {
+  font-size: 2rem;
+  line-height: 3rem;
+  max-width: 41rem;
+  margin-bottom: 6rem;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 2rem 2rem 0rem 0rem;
+  min-height: 30rem;
+  padding-block: 6.4rem;
+}
+
+fieldset {
+  border: none;
+  margin-inline: 6.4rem;
+}
+
+fieldset legend {
+  font-family: 'Staatliches';
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: var(--font-color-secondary);
+  margin-bottom: 1.6rem;
+}
+
+input {
+  background: #fafafc;
+
+  border: 0.1rem solid #e6e6f0;
+  border-radius: 0.8rem;
+  height: 5.6rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  gap: 2.2rem;
+}
+
+.name input {
+  width: 30rem;
+}
+
+form p {
+  font-family: 'Staatliches';
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: var(--font-color-secondary);
+}
+
+span {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #c1bccc;
+}
+
+.outline {
+  border: 1px solid #e6e6f0;
+  margin-bottom: 3.6rem;
+}
+
+.first-date {
+  display: flex;
+  gap: 3.2rem;
+}
+
+#first-date,
+#second-date {
+  width: 30rem;
+}
+
+#initial-second-hour,
+#final-second-hour,
+#initial-first-hour,
+#final-first-hour {
+  width: 14rem;
+}
+
+.second-date {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.button {
+  background-color: var(--font-color-secondary);
+  height: 16rem;
+  border-radius: 0rem 0rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 60.8rem;
+  height: 5.5rem;
+  background-color: var(--bg-button);
+  border-radius: 2rem;
+  border: none;
+  color: #ffffff;
+  font-family: 'Staatliches';
+  font-size: 2rem;
+  line-height: 2.6rem;
+  cursor: pointer;
+
+  transition: background 0.4s;
+}
+
+button:hover {
+  background-color: #af314a;
+}
